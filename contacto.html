@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="KeyWords" content="contador, contaduría, afip, impuestos, ganancias">
+    <meta name="description" content="Estudio contable capacitado para resolver cualquier situación que se le presente con respecto a sus impuestos.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/75929d6988.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Usamos fuente de Google Fonts en "titulo_contacto" -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&family=Open+Sans:wght@300;400&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <title>Estudio Contable</title>
+</head>
+<body>
+    <header>
+        <nav class="flex-container">
+            <img id="logo" src="./img/Web de Contadores.png" alt="logo">
+            <ul id="nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="planes.html">Planes</a></li>
+                <li><a href="tramites.html">Servicios</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    
+        <h2 class="titulo_contacto">Comunicate para consultar todas las dudas que tengas y solicitá tu presupuesto sin cargo</h2>
+       
+        <div class="flex_containter-contacto">
+
+        <div class="div_mensaje">
+            <form class="form_contacto" id="formulario" action="https://formspree.io/f/moqbkyoa" method="post">
+                <input type="text" name="nombreyapellido" placeholder="Nombre y Apellido" >
+                <input type="email" name="email" placeholder="E-mail" id="email">
+                <textarea name="consulta" id="consulta" cols="30" rows="8">Escriba su mensaje</textarea>
+                <input id="contacto_submit" type="submit">
+            </form>
+        </div>
+
+        <div class="div_contacto">
+            <ul>
+                <img src="img/user-solid.svg" alt="Nombre" width="8%"><li>Contadora Samanta Nuñez</li>
+                <hr>
+                <img src="img/envelope-solid.svg" alt="Email" width="8%"><li>E-mail:</li>
+                <li>webdecontadores@gmail.com</li>
+                <hr>
+                <img src="img/clock-solid.svg" alt="Horario" width="8%"><li>Horario de atención:</li>
+                <li>Lunes a Viernes de 09 a 18 Hs</li>
+        </ul>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <section id="redesSociales">
+            <a class="pie_redes" href="https://www.instagram.com/webdecontadores/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a class="pie_redes" href="https://www.linkedin.com/in/samanta-liliana-ruth-nunez/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+         </section>
+        <p id="copyright">© Copyright Web de Contadores - 2022</p>
+    </footer>
+
+
+<script src="./validar.js"></script>
+
+</body>
+</html>
