@@ -86,8 +86,8 @@ main {
 }
 
 #titulo{
-    height: 30rem;
-    width: 70rem;
+    /* height: 30rem;
+    width: 70rem; */
     font-size: 4rem;
     font-family: 'consolas';
     text-shadow: -0.3rem 0.3rem white;
@@ -95,7 +95,6 @@ main {
 
 #titulo h1:first-child{
     margin-left: 20rem;
-
     animation-name: mover1;
     animation-duration: 1s;
     animation-delay: 0.5s;
@@ -207,13 +206,13 @@ main {
     }
 
     body{
-        width: 100%;
-        height: auto;
+        /* width: 100%; */
+        /* height: auto; */
     }
 
     .flex-container{
         /* flex-direction: column; */
-        width: 100%;
+        /* width: 100%; */
         height: auto;
         justify-content: space-around;
     }
@@ -246,8 +245,8 @@ main {
 
     #titulo{
         margin-top: 2rem;
-        height: 10rem;
-        width: 10rem;
+        /* height: 10rem;
+        width: 10rem; */
         font-size: 1.5rem;
     }
 
@@ -287,11 +286,11 @@ main {
     }
 
     .formulario{
-        width: 80%;
+        /* width: 90%; */
         margin: 0.5rem auto;
         /* text-align: center;
         align-items: center; */
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
     
     .formulario h2{
@@ -323,7 +322,7 @@ main {
 
  }
 
-    @media screen and (max-width: 1215px) {
+    @media screen and (max-width: 1215px)  {
 
       a {
         font-size: 2rem;
@@ -366,25 +365,27 @@ main {
 }
 
 .div-soporte_online {
-    margin: 1rem 1rem;
+    width: 100%;
+    text-align: center;
 }
 
 #planes h2 {
     font-size: 5rem;
-    position: relative;
-    margin-left: 15%;
+    /* position: relative; */
+    /* margin-left: 15%; */
 }
 
 .soporte_online {
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem 1rem;
     font-size: 2rem;
 }
 
 .grid-container {
     display: grid;
-    max-width: 50rem;
-    margin-left: 90rem;
+    /* max-width: 50rem; */
+    margin-left: 100rem;
+    width: auto;
 }
 
 .grid-planes{
@@ -398,7 +399,7 @@ main {
     grid-area: monotributistas;
     cursor: pointer;
     animation: aparecer 30s linear 0s infinite normal;
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 
 #empresas {
@@ -406,7 +407,7 @@ main {
     cursor: pointer;
     animation: aparecer 30s linear 10s infinite normal;
     opacity: 0%;
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 
 #responsablesinscriptos {
@@ -414,10 +415,8 @@ main {
     cursor: pointer;
     animation: aparecer 30s linear 20s infinite normal;
     opacity: 0%;
-    background-color: bisque;
+    /* background-color: bisque; */
 }
-
-
 
 @keyframes aparecer {
     0% {opacity: 0%;}
@@ -427,7 +426,6 @@ main {
     80% {opacity: 0%;}
     100% {opacity: 0%;}
 }
-
 
 .titulo_planes {
     font-size: 3rem;
@@ -448,16 +446,15 @@ main {
 @media screen and (max-width: 768px) {
     
     .grid-container {
-        margin: 0 auto; 
-        max-width: 30rem;
+        margin-left: 0; 
     }
+
 }
 
 @media screen and (max-width: 1024px) {
     .grid-container {
-        display: grid;
         /* max-width: 100rem; */
-        margin-left: 10rem;
+        margin: 0 auto;
     }
 }
 
@@ -529,18 +526,14 @@ main {
 
 /* servicios tiene 3 medias queries: */
 
-@media screen and (max-width: 626px) {
-    .imagen_servicios {
-        opacity: 0;
-    }
-}
 
 @media screen and (max-width: 768px) { 
     .grid-container_servicios {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         padding: 0 1rem;
         margin: 5px auto;
         display: grid;
+        /* height: 70vh; */
         grid-gap: 8px; 
         grid-template-columns: repeat(1, 1fr);
     
@@ -572,7 +565,7 @@ main {
 
 } 
  
-@media screen and (max-width: 1215px) {
+@media screen and (max-width: 1215px) and (min-width: 769px) {
 
     .grid-container_servicios {
         font-size: 1.3rem;
@@ -605,7 +598,7 @@ main {
     /* width: 80%; */
     /* margin: 20rem 20rem;  */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     /* height: 10vh; */
     align-items: center;
 }
@@ -630,47 +623,51 @@ main {
 
 
 	.container_clientes {
-        /* width: 80%; */
+        /* width: 100%; */
         margin: 3rem auto; 
         justify-content: space-around;
-        /* flex-direction: column; */
+        flex-direction: column;
         row-gap: 2rem;
         flex-wrap: wrap;
         /* height: 10vh; */
-        align-items: center;
+        /* align-items: center; */
     }
 
     .container_clientes img {
-        width: 15rem;
-        /* margin-bottom: 3rem; */
+        width: 20rem;
     }
+
+
 } 
 
 @media screen and (max-width: 1215px){
     .titulo_clientes {
         font-size: 4rem;
+        padding: 5rem 0 1rem;
     }
 
-    .container_clientes {
-        /* width: 80%; */
-        margin: 1rem auto; 
+     /* .cuerpo_clientes {
+        flex:1;
+    }  */
+
+
+	.container_clientes {
+        width: 100%;
+        margin: 3rem auto; 
         justify-content: space-around;
-        /* flex-direction: column; */
+        flex-direction: row;
         row-gap: 2rem;
         flex-wrap: wrap;
         /* height: 10vh; */
-        align-items: center;
+        /* align-items: center; */
     }
 
     .container_clientes img {
         width: 25rem;
-        margin:  0 5rem 0 5rem;
-        /* margin-bottom: 3rem; */
     }
 
 
-}
-
+} 
 
 /* --------------------------- CONTACTO ------------------- */
 
@@ -751,8 +748,10 @@ main {
 
 @media screen and (max-width: 768px) {
 
-    .flex-container {
-        width: 100%;
+    .flex_containter-contacto {
+        /* justify-content: flex-start; */
+        margin: 0rem;
+        gap: 0rem;
     }
 
     .titulo_contacto {
@@ -760,11 +759,24 @@ main {
         text-shadow: 2px 2px white;
     }
 
+    .div_mensaje {
+        margin-right: 0rem;
+        width: 100%;
+        
+    }
+
+    .div_mensaje input, textarea{
+        width: 100%;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+    }
+
     .flex_containter-contacto {
         justify-content:space-between;
         margin: 1rem;
         gap: 0rem;
     }
+
 
     .div_contacto {
         /* background-color: rgb(214, 145, 214); */
@@ -777,27 +789,36 @@ main {
         text-shadow: 2px 2px white;
 
     }
+
+    iframe {
+        width: 100%;
+    }
    
 }
 
-@media screen and (max-width: 1215px) {
+@media screen and (max-width: 1024px) and (min-width:769px) {
     .titulo_contacto {
         font-size: 3rem;
         text-shadow: 2px 2px white;
     }
 
+    .div_mensaje {
+       margin-left: 0rem;
+        
+    }
+
     .flex_containter-contacto {
-        justify-content:baseline;
+        justify-content: flex-start;
         margin: 1rem;
         gap: 0rem;
     }
-}
 
-@media screen and (min-width: 1214px) {
-    .flex_containter-contacto {
-        margin: 0rem;
+    iframe {
+        width: 25%;
     }
 }
+
+
 
 
 
